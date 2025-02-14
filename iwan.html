@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @keyframes colorChange {
+    0% { color: #ff5733; }  /* Red */
+    25% { color:  #00986f; } /* Green */
+    50% { color: #3357ff; } /* Blue */
+    75% { color: #1de2f0; } /* Pink */
+    100% { color: #ff5733; } /* Back to Red */
+}
+
+h1 {
+    animation: colorChange 4s infinite alternate;
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+       
+        <nav>
+            <img src="menu.png" class="menu-img" data-aos="fade-right" data-aos-duration="1400">
+            <img src="logo.png" class="logo" data-aos="fade-right" data-aos-duration="1400">
+            <ul>
+                <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600"><a href="home.html">HOME</a></li>
+                <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700"><a href="hys.html">COFFE SHOP</a></li>
+                <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><a href="car shop.html">CAR SHOP</a></li>
+                <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="900"><a href="index.html">PAGE</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600"></span></button>
+        </nav>
+
+<div class="lamp-container">
+   <img src="lamp.png" class="lamp" data-aos="fade-right" data-aos-duration="1400">
+   <img src="light.png" class="light" id="light">
+</div>
+        
+<div class="text-container">
+    <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Nice<br>No?</h1>
+    <p data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200"><mark>"Tuplok-Tuoplok raman ang IT" Piste unsay tuplok-tuplok, dili sayun ang IT oi abi palang,
+        sa upcoming G11 jan wag mag IT thank you!</mark>
+    </p>
+    <a href="" data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Tuploka sad</a>
+    <div class="control">
+        <p data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">04</p>
+        <div class="line"><span data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400"></span></div>
+        <p data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">05</p>
+    </div>
+</div>
+
+
+
+    </div>
+
+     <script>
+
+    var btn = document.getElementById("btn");
+    
+    var light = document.getElementById("light");
+
+    var img = document.getElementById("skibidi");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+        img.classList.toggle("on");
+
+
+
+    }
+     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:1,
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("ol").append(" <b>NO!</b>.");
+          });
+        
+          $("#btn2").click(function(){
+            $("ol").append("<li>NO!</li>");
+          });
+
+          $("#btn3").click(function(){
+            $("ol").append("<li>NO!</li>");
+          });
+        });
+        </script>
+        </head>
+        <body>
+        
+        <p>First Question</p>
+      
+        
+        <ol>
+          <li>naka move on kana ba?</li>
+      
+        </ol>
+        
+        <button id="btn1">Yes</button>
+        <button id="btn3">Or</button>
+        <button id="btn2">No</button>
+            
+
+</body>
+</html>

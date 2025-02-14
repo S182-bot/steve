@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styl.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+   
+    }
+    
+    
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Background Video */
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Ensure the video stays in the background */
+    }
+
+    /* Navbar Styling */
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+    }
+
+    /* Logo styling */
+    .logo {
+    width: 150px; /* Pwede mong baguhin depende sa size na gusto mo */
+    height: 150px;
+    border-radius: 50%; /* Ginagawa nitong perfect circle */
+    object-fit: cover; /* Para hindi ma-distort ang image */
+    filter: none; /* Siguraduhing walang blur */
+}
+
+
+    /* Navbar list styling */
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease, transform 0.3s ease;
+      animation: colorChange 8s infinite alternate;
+    }
+
+    /* Hover effect for navbar links */
+    nav ul li a:hover {
+      color: #ff6347;
+      transform: scale(1.1);
+    }
+
+    /* Content Section */
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Main Title */
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      animation: colorChange 8s infinite alternate;
+    }
+
+    /* Link inside content section */
+    .ambot a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid white;
+      transition: color 0.3s ease, border-color 0.3s ease;
+      animation: colorChange 8s infinite alternate;
+    }
+
+    /* Hover effect for the 'Gwapa' link */
+    .ambot a:hover {
+      color: #ff6347;
+      border-color: #ff6347;
+    }
+
+    /* Color-changing Animation */
+    @keyframes colorChange {
+      0% { color: #ff1696; }
+      25% { color: #FFD700; }
+      50% { color: #32CD32; }
+      75% { color: #00BFFF; }
+      100% { color: #8A2BE2; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    
+    <!-- Background Video -->
+    <video class="video-container" autoplay muted loop>
+      <source src="Rainbow Screen Change.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar -->
+    <nav data-aos="fade-right" data-aos-duration="1400">
+      <img src="FLORES..jpg" class="logo">
+      <ul>
+        <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600"><a href="#home" class="active">HOME</a></li>
+        <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700" ><a href="Checkout.html">Checkout</a></li>
+        <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><a href="iwan.html">Business</a></li>
+        <li data-aos="fade-in" data-aos-duration="1400" data-aos-delay="900"><a href="index.html">PAGE</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content" data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">
+      <h1>Steven Flores</h1>
+
+      <div class="ambot">
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+  </div>
+
+       <!--- scrip --->
+       <script src="js/script.js"></script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init({
+           offset:1,
+         });
+       </script>
+
+       
+
+</body>
+</html>
